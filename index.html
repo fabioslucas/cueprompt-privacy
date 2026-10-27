@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CuePrompt · Política de Privacidade</title>
+<meta name="description" content="Política de privacidade e suporte do app CuePrompt, teleprompter offline da Ferri Studio Brasil.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Orbitron:wght@700&display=swap">
+<style>
+  /* Layout: one centered reading column; Portuguese policy, then English, then support. CuePrompt's single dark look. */
+  :root {
+    --bg: #0B0B0F;
+    --panel: #15151D;
+    --line: #2A2A38;
+    --text: #F4F4F7;
+    --dim: #A5A5B5;
+    --accent: #B726FF;
+    --accent-soft: rgba(183, 38, 255, 0.14);
+    --font-brand: "Orbitron", "Arial Black", system-ui, sans-serif;
+    --font-body: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    color-scheme: dark;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font: 16px/1.65 var(--font-body);
+    padding-left: max(16px, env(safe-area-inset-left, 0px));
+    padding-right: max(16px, env(safe-area-inset-right, 0px));
+  }
+  .wrap { max-width: 44rem; margin: 0 auto; padding-block: 48px 72px; display: grid; gap: 40px; }
+  header { display: grid; gap: 18px; }
+  .brand { display: flex; align-items: center; gap: 12px; }
+  .brand svg { width: 36px; height: 36px; flex: none; }
+  .wordmark { font-family: var(--font-brand); font-weight: 700; font-size: 1.35rem; letter-spacing: 0.14em; }
+  .wordmark span { color: var(--accent); }
+  nav { display: flex; flex-wrap: wrap; gap: 8px 18px; font-size: 0.9rem; }
+  a { color: var(--accent); text-underline-offset: 3px; }
+  a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 4px; }
+  .summary {
+    background: var(--accent-soft);
+    border: 1px solid var(--accent);
+    border-radius: 14px;
+    padding: 18px 20px;
+    display: grid;
+    gap: 6px;
+  }
+  .summary strong { font-weight: 600; }
+  section { display: grid; gap: 4px; }
+  h1 { font-size: 1.9rem; line-height: 1.2; margin: 0; text-wrap: balance; font-weight: 600; }
+  h2 { font-size: 1.05rem; margin: 22px 0 0; font-weight: 600; }
+  p { margin: 0; max-width: 65ch; }
+  .meta { color: var(--dim); font-size: 0.875rem; }
+  .lang {
+    font-size: 0.72rem; letter-spacing: 0.12em; text-transform: uppercase;
+    color: var(--dim); margin-bottom: 6px;
+  }
+  hr { border: 0; border-top: 1px solid var(--line); margin: 0; }
+  .contact {
+    display: flex; flex-wrap: wrap; align-items: center; gap: 10px;
+    background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 12px 14px;
+    margin-top: 8px;
+  }
+  .contact code { font: 500 0.95rem var(--font-body); user-select: all; overflow-wrap: anywhere; min-width: 0; }
+  button {
+    font: 500 0.85rem var(--font-body); color: var(--text); background: transparent;
+    border: 1px solid var(--line); border-radius: 999px; padding: 6px 14px; cursor: pointer;
+  }
+  button:hover { border-color: var(--accent); }
+  ul { margin: 6px 0 0; padding-left: 1.2rem; display: grid; gap: 6px; max-width: 65ch; }
+  footer { color: var(--dim); font-size: 0.85rem; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="brand" aria-label="CuePrompt">
+      <svg viewBox="0 0 100 100" aria-hidden="true">
+        <rect x="8" y="24" width="44" height="8" rx="4" fill="#F4F4F7" opacity=".35"/>
+        <rect x="8" y="46" width="34" height="8" rx="4" fill="#F4F4F7"/>
+        <rect x="8" y="68" width="44" height="8" rx="4" fill="#F4F4F7" opacity=".35"/>
+        <path d="M60 30 L92 50 L60 70 Z" fill="#B726FF" stroke="#B726FF" stroke-width="6" stroke-linejoin="round"/>
+      </svg>
+      <div class="wordmark">CUE<span>PROMPT</span></div>
+    </div>
+    <nav aria-label="Seções / Sections">
+      <a href="#privacidade">Política de Privacidade</a>
+      <a href="#suporte">Suporte</a>
+      <a href="#privacy">Privacy Policy (English)</a>
+      <a href="#support">Support (English)</a>
+    </nav>
+  </header>
+
+  <section id="privacidade">
+    <div class="lang">Português</div>
+    <h1>Política de Privacidade</h1>
+    <p class="meta">Vigente desde 27 de outubro de 2026 · Publicado por Ferri Studio Brasil</p>
+
+    <div class="summary" style="margin-top:16px">
+      <strong>Resumo</strong>
+      <p>O CuePrompt não coleta, não envia, não compartilha e não vende nenhum dado pessoal. Tudo o que você cria fica no seu aparelho.</p>
+    </div>
+
+    <h2>Informações que coletamos</h2>
+    <p>Nenhuma. O CuePrompt não tem contas, login, análise de uso, anúncios, relatórios de falhas nem rastreamento. O app não se conecta à internet.</p>
+
+    <h2>Dados guardados no seu aparelho</h2>
+    <p>Os roteiros que você escreve ou importa e suas preferências de exibição (fonte, tamanho do texto, espaçamento, velocidade e modo espelho) ficam apenas no armazenamento privado do app, no seu aparelho. Eles não são enviados para nós nem para ninguém. Ao excluir um roteiro, ele é removido do app; ao desinstalar o app, todos os dados dele são apagados.</p>
+
+    <h2>Arquivos importados</h2>
+    <p>Quando você escolhe um arquivo TXT, DOCX ou PDF para importar, o app lê o arquivo no próprio aparelho apenas para extrair o texto. O arquivo não é enviado para lugar nenhum.</p>
+
+    <h2>Permissões</h2>
+    <p>O CuePrompt não usa câmera, microfone, fotos, contatos nem localização, e não pede essas permissões.</p>
+
+    <h2>Compras</h2>
+    <p>O CuePrompt é vendido por um valor único na Google Play. O pagamento é processado pelo Google; não recebemos os dados do seu cartão nem da sua conta.</p>
+
+    <h2>Crianças</h2>
+    <p>O CuePrompt não coleta informações de ninguém, incluindo crianças.</p>
+
+    <h2>Alterações</h2>
+    <p>Se esta política mudar, a nova versão será publicada nesta página com uma nova data de vigência.</p>
+
+    <h2>Contato</h2>
+    <p>Dúvidas sobre esta política:</p>
+    <div class="contact">
+      <code class="email">fabiossilvafbi123+github@gmail.com</code>
+      <button type="button" class="copy" id="copy-pt">Copiar e-mail</button>
+    </div>
+  </section>
+
+  <section id="suporte">
+    <h1>Suporte</h1>
+    <p>Precisa de ajuda ou encontrou um problema? Escreva para o e-mail acima com o modelo do seu aparelho e a versão do sistema.</p>
+    <ul>
+      <li><strong>Criar um roteiro:</strong> toque em <em>New script</em>, digite ou cole o texto e toque em <em>Save &amp; play</em>.</li>
+      <li><strong>Importar um arquivo:</strong> toque em <em>Import</em> e escolha um arquivo TXT, Word (DOCX) ou PDF. Revise o texto e toque em <em>Done</em>.</li>
+      <li><strong>Um PDF não importa:</strong> PDFs escaneados (imagens de páginas) e PDFs protegidos por senha não têm texto legível. Copie o texto em outro app e cole em um roteiro novo.</li>
+      <li><strong>Mudar a velocidade:</strong> use o controle de velocidade durante a leitura; ele funciona com o texto em movimento.</li>
+      <li><strong>Esconder os controles:</strong> toque em qualquer lugar do texto. Toque de novo para mostrá-los.</li>
+      <li><strong>Modo espelho:</strong> toque no botão ⇄ para inverter o texto para vidro de teleprompter.</li>
+      <li><strong>Guardar uma cópia:</strong> os roteiros ficam só no seu aparelho. Para ter uma cópia em outro lugar, abra o roteiro, selecione o texto e copie para outro app.</li>
+    </ul>
+  </section>
+
+  <hr>
+
+  <section id="privacy">
+    <div class="lang">English</div>
+    <h1>Privacy Policy</h1>
+    <p class="meta">Effective October 27, 2026 · Published by Ferri Studio Brasil</p>
+
+    <div class="summary" style="margin-top:16px">
+      <strong>In short</strong>
+      <p>CuePrompt does not collect, send, share or sell any personal data. Everything you create stays on your device.</p>
+    </div>
+
+    <h2>Information we collect</h2>
+    <p>None. CuePrompt has no accounts, no sign-in, no analytics, no advertising, no crash reporting and no tracking. The app does not connect to the internet.</p>
+
+    <h2>Data stored on your device</h2>
+    <p>The scripts you write or import, and your display preferences (font, text size, line spacing, scrolling speed and mirror mode), are saved only in the app's private storage on your device. They are not sent to us or to anyone else. Deleting a script removes it from the app; uninstalling the app removes all of its data.</p>
+
+    <h2>Files you import</h2>
+    <p>When you choose a TXT, DOCX or PDF file to import, the app reads it on your device only to extract its text. The file is not uploaded anywhere.</p>
+
+    <h2>Permissions</h2>
+    <p>CuePrompt does not use your camera, microphone, photos, contacts or location, and it does not ask for those permissions.</p>
+
+    <h2>Purchases</h2>
+    <p>CuePrompt is sold as a one-time purchase on Google Play. Payment is handled by Google; we never receive your card or account details.</p>
+
+    <h2>Children</h2>
+    <p>CuePrompt does not collect information from anyone, including children.</p>
+
+    <h2>Changes</h2>
+    <p>If this policy changes, the updated version will be posted on this page with a new effective date.</p>
+
+    <h2>Contact</h2>
+    <p>Questions about this policy:</p>
+    <div class="contact">
+      <code class="email">fabiossilvafbi123+github@gmail.com</code>
+      <button type="button" class="copy" id="copy-en">Copy email</button>
+    </div>
+  </section>
+
+  <section id="support">
+    <h1>Support</h1>
+    <p>Need help or found a problem? Write to the email above and include your device model and system version.</p>
+    <ul>
+      <li><strong>Create a script:</strong> tap <em>New script</em>, type or paste your text, then <em>Save &amp; play</em>.</li>
+      <li><strong>Import a file:</strong> tap <em>Import</em> and choose a TXT, Word (DOCX) or PDF file. Review the text and tap <em>Done</em>.</li>
+      <li><strong>A PDF won't import:</strong> scanned PDFs (images of pages) and password-protected PDFs contain no readable text. Copy the text from another app and paste it into a new script instead.</li>
+      <li><strong>Change speed:</strong> use the speed slider during playback; it works while the text is moving.</li>
+      <li><strong>Hide the controls:</strong> tap anywhere on the text. Tap again to bring them back.</li>
+      <li><strong>Mirror mode:</strong> tap the ⇄ button to flip the text for teleprompter glass.</li>
+      <li><strong>Keep a copy:</strong> scripts live only on your device. To keep a copy elsewhere, open a script, select its text and copy it to another app.</li>
+    </ul>
+  </section>
+
+  <footer>© 2026 Ferri Studio Brasil · CuePrompt</footer>
+</div>
+
+<script>
+  document.querySelectorAll('.copy').forEach((btn) => {
+    const label = btn.textContent;
+    btn.addEventListener('click', async () => {
+      const email = btn.parentElement.querySelector('.email');
+      try {
+        await navigator.clipboard.writeText(email.textContent.trim());
+        btn.textContent = btn.id === 'copy-pt' ? 'Copiado' : 'Copied';
+      } catch {
+        const range = document.createRange();
+        range.selectNodeContents(email);
+        const sel = window.getSelection();
+        sel.removeAllRanges();
+        sel.addRange(range);
+        btn.textContent = btn.id === 'copy-pt' ? 'Selecionado' : 'Selected';
+      }
+      setTimeout(() => { btn.textContent = label; }, 2000);
+    });
+  });
+</script>
+</body>
+</html>
